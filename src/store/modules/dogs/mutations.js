@@ -1,6 +1,6 @@
 export const mutationNames = {
     SET_ALL_BREEDS: '[DOGS mutation]: Set all dogs',
-    SET_AVAILABLE_SUBBREEDS: '[DOGS mutation]: Set all dogs',
+    SET_AVAILABLE_SUBBREEDS: '[DOGS mutation]: Set available subbreeds',
     SET_ACTIVE_BREED: '[DOGS mutation]: Set active breed',
     SET_ACTIVE_SUBBREED: '[DOGS mutation]: Set active subbreed',
     SET_ACTIVE_PICTURES: '[DOGS mutation]: Set active pictures'

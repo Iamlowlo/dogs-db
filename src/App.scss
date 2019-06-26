@@ -1,4 +1,14 @@
 @import "./styles/variables";
+@import "./styles/mixins";
 
 @import "./styles/reset";
 @import "./styles/typography";
+
+
+.main-page {
+  padding: px2rem(32) px2rem(24);
+
+  &__title {
+    font-size: px2rem(24);
+  }
+}

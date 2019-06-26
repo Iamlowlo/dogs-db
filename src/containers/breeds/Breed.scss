@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.breeds {
+  &__title {
+    border-bottom: 2px solid $c-compliment;
+    color: $c-primary;
+  }
+
+  &-group-list {
+
+    &__element {
+      display: flex;
+      padding: px2rem(16) 0;
+
+      &__title {
+        color: $c-secondary;
+        font-size: px2rem(32);
+        padding-right: px2rem(16);
+        width: px2rem(32);
+      }
+    }
+  }
+}

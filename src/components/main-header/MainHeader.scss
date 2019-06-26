@@ -7,14 +7,15 @@
 
   &__title {
     color: $c-white;
-    font-size: px2rem(24);
+    font-size: px2rem(32);
+    line-height: 0.9;
     margin-bottom: px2rem(16);
     padding: 0 px2rem(20);
   }
 
   &__nav {
     background-color: $c-white;
-    border-bottom: 1px solid $c-tertiary;
+    border-bottom: 2px solid $c-tertiary;
     display: flex;
     padding: 0 px2rem(20);
 
