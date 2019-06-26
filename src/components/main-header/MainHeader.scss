@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.main-header {
+  background-color: $c-primary;
+  padding-top: px2rem(32);
+
+  &__title {
+    color: $c-white;
+    font-size: px2rem(24);
+    margin-bottom: px2rem(16);
+    padding: 0 px2rem(20);
+  }
+
+  &__nav {
+    background-color: $c-white;
+    border-bottom: 1px solid $c-tertiary;
+    display: flex;
+    padding: 0 px2rem(20);
+
+    &__link {
+      color: $c-primary;
+      font-size: px2rem(16);
+      font-weight: 600;
+      padding: px2rem(8);
+      text-decoration: none;
+      transition: color 0.2s ease-in, background-color 0.2s ease-in;
+      &:hover {
+        background-color: $c-secondary;
+        color: $c-white;
+      }
+    }
+  }
+}
