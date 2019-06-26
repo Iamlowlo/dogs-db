@@ -14,7 +14,6 @@ export default {
             DogsService.getAllBreeds()
                 .then(({ data }) => {
                     if (data.status === 'success') {
-                        console.log('ASAS')
                         commit(mutationNames.SET_ALL_BREEDS, Object.keys(data.message));
                         resolve(data.message)
                     } else {
@@ -34,7 +33,7 @@ export default {
             DogsService.getAvailableSubBreeds(breedName)
                 .then(({ data }) => {
                     if (data.status === 'success') {
-                        commit(mutationNames.SET_AVAILABLE_SUBBREEDS, Object.keys(data.message));
+                        commit(mutationNames.SET_AVAILABLE_SUBBREEDS, data.message);
                         resolve(data.message)
                     } else {
                         console.error('Error requesting all breeds');
@@ -70,7 +69,8 @@ export default {
     [actionNames.GET_SUBBREED_PICTURES]: ({commit}, { breedName, subBreedName }) => {
         return new Promise((resolve, reject) => {
             DogsService.getSubBreedPictures(breedName, subBreedName)
-                .then(( data ) => {
+                .then(({ data }) => {
+
                     if (data.status === 'success') {
                         commit(mutationNames.SET_ACTIVE_PICTURES, data.message);
                         resolve(data.message)
